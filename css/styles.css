@@ -11448,7 +11448,9 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 30rem;
+  width: 70%;
+  min-width: 10rem;
+  max-width: 25rem;
   border-radius: 100%;
 }
 
@@ -11502,6 +11504,38 @@ html {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+}
+
+.reveal-onscroll {
+  position: relative;
+  transform: translateY(75px);
+  opacity: 0;
+  transition: .75s all ease;
+}
+.reveal-onload {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: .5s all ease;
+}
+
+.reveal-onscroll.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.reveal-onload.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.delay-qtrsec {
+    transition-delay: .25s;
+}
+.delay-halfsec {
+    transition-delay: .5s;
+}
+.delay-threeqtrsec {
+    transition-delay: .75s;
 }
 
 .footer {
