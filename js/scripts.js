@@ -52,3 +52,37 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+//triggers on load
+window.onload = function() {
+    //grab all els that have this class
+    var reveals = document.querySelectorAll(".reveal-onload");
+    
+    //make it happen
+    for (var i = 0; i < reveals.length; i++)
+        reveals[i].classList.add("active");
+};
+
+//triggers revealScroll() on scroll
+window.addEventListener("scroll", revealScroll);
+
+function revealScroll() {
+    
+    //grab all els that have these classes
+    var revealScroll = document.querySelectorAll(".reveal-onscroll");
+    
+    //determine whether the els are in viewport at the time
+    for (var i = 0; i < revealScroll.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealScroll[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          revealScroll[i].classList.add("active");
+        } 
+        
+        //this restarts the animation when els are out of viewport, dont want that rn
+        /*else {
+          reveals[i].classList.remove("active");
+        }*/
+  }
+}
