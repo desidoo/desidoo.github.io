@@ -1,0 +1,12 @@
+BrightTag.site('YOoTwyE',function(s){
+s.events.bind('the adeline - schedule a tour (click)','a:contains(\x22Schedule a Tour\x22)','DIRECT/click',{pageId:4079678});
+s.events.bind('the adeline - applicant (click)','a[href*\x3d\x22https://www.theadelineorlando.com/Apartments/module/application_authentication/\x22]','DIRECT/mousedown',{pageId:4079678});
+s.events.bind('the adeline - contact me (click)','button:contains(\x22Contact Me\x22)','DIRECT/mousedown',{pageId:4079678});
+s.events.on('the adeline - contact me (click)').fire(7524404);
+s.events.on('the adeline - applicant (click)').fire(7526646);
+s.events.on('the adeline - schedule a tour (click)').fire(7526649);
+s.domready(function(){
+s.tag('\x3c!-- Global site tag (gtag.js) - Google Ads: 10810048671 --\x3e\n\x3cscript async src\x3d\x22https://www.googletagmanager.com/gtag/js?id\x3dAW-10810048671\x22\x3e\x3c/script\x3e\n\x3cscript\x3e\n  window.dataLayer \x3d window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag(\x27js\x27, new Date());\n\n  gtag(\x27config\x27, \x27AW-10810048671\x27);\n\x3c/script\x3e\n',{tagId:7524403});
+s.tag('\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22//cdn.callrail.com/companies/344528982/e89374aa165a31e0da6c/12/swap.js\x22\x3e\x3c/script\x3e \n',{tagId:7530060});
+});
+});

@@ -1,0 +1,14 @@
+.new-form .vertform-item.textarea textarea {
+	color: inherit;
+}
+
+.neighborhood-map-content .neighborhood-map-container .property-iw-title,
+.neighborhood-map-content .neighborhood-map-container .property-iw-address {
+	color: #222;
+}
+
+.fp-overview-container .fp-group.grid .fp-card .fp-img-container .fp-img,
+.fp-overview-container .fp-group.img_grid .fp-card .fp-img-container .fp-img,
+.fp-overview-container .fp-group.stacked .fp-card .fp-img-container .fp-img {
+	background-size: contain;
+}
